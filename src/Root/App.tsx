@@ -108,15 +108,16 @@ function App() {
     return (
         <ViewBase>
             <Switch>
+                <Route path="/dashboard" exact component={() => <Dashboard />} />
                 <Route exact path="/dashboard">
                     <Dashboard />
                 </Route>
 
                 <Route exact path="/">
-                    <Redirect to="/stake" />
+                    <Redirect to="dashboard" />
                 </Route>
 
-                <Route path="/stake">
+                <Route path="/dashboard">
                     <Stake />
                 </Route>
 

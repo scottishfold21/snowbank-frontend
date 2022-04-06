@@ -21,7 +21,6 @@ const addTokenToWallet = (tokenSymbol: string, tokenAddress: string) => async ()
                         address: tokenAddress,
                         symbol: tokenSymbol,
                         decimals: TOKEN_DECIMALS,
-                        image: tokenImage,
                     },
                 },
             });
@@ -45,6 +44,7 @@ function SnowbankMenu() {
 
     const SSB_ADDRESS = addresses.SSB_ADDRESS;
     const SB_ADDRESS = addresses.SB_ADDRESS;
+    const CAT_ADDRESS = addresses.CAT_ADDRESS;
 
     const handleClick = (event: any) => {
         setAnchorEl(anchorEl ? null : event.currentTarget);
@@ -64,7 +64,7 @@ function SnowbankMenu() {
                         <div className="tooltip">
                             <Link
                                 className="tooltip-item"
-                                href={`https://www.traderjoexyz.com/trade?inputCurrency=0x130966628846bfd36ff31a822705796e8cb8c18d&outputCurrency=${SB_ADDRESS}`}
+                                href={`https://www.tethys.finance/trade?inputCurrency=0x130966628846bfd36ff31a822705796e8cb8c18d&outputCurrency=${SB_ADDRESS}`}
                                 target="_blank"
                             >
                                 <p>{t("BuyOnTraderJoe")}</p>
@@ -75,11 +75,8 @@ function SnowbankMenu() {
                                     <div className="divider" />
                                     <p className="add-tokens-title">{t("AddTokenToWallet")}</p>
                                     <div className="divider" />
-                                    <div className="tooltip-item" onClick={addTokenToWallet("SB", SB_ADDRESS)}>
-                                        <p>↑ SB</p>
-                                    </div>
-                                    <div className="tooltip-item" onClick={addTokenToWallet("sSB", SSB_ADDRESS)}>
-                                        <p>↑ sSB</p>
+                                    <div className="tooltip-item" onClick={addTokenToWallet("CAT", CAT_ADDRESS)}>
+                                        <p>↑ CAT</p>
                                     </div>
                                 </div>
                             )}

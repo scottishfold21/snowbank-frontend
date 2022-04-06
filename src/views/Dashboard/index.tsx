@@ -80,6 +80,12 @@ function Dashboard() {
                             </div>
                         </Grid>
 
+                        <Grid item lg={6} md={6} sm={6} xs={12}>
+                            <div className="dashboard-card">
+                                <p className="card-title">{t("Next Rebase")}</p>
+                                <p className="card-value">{isAppLoading ? <Skeleton width="100px" /> : `15:00`}</p>
+                            </div>
+                        </Grid>
                         {/* <Grid item lg={6} md={6} sm={6} xs={12}>
                             <div className="dashboard-card">
                                 <p className="card-title">{t("wsSBPrice")}</p>
@@ -144,12 +150,12 @@ function Dashboard() {
                             </div>
                         </Grid> */}
 
-                        {/* <Grid item lg={6} md={6} sm={6} xs={12}>
+                        <Grid item lg={6} md={6} sm={6} xs={12}>
                             <div className="dashboard-card">
                                 <p className="card-title">{t("APY")}</p>
-                                <p className="card-value">{isAppLoading ? <Skeleton width="250px" /> : `${new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY))}%`}</p>
+                                <p className="card-value">{isAppLoading ? <Skeleton width="250px" /> : `0.02355%  per 15 mins`}</p>
                             </div>
-                        </Grid> */}
+                        </Grid>
 
                         {/* <Grid item lg={6} md={6} sm={6} xs={12}>
                             <div className="dashboard-card">
@@ -158,7 +164,7 @@ function Dashboard() {
                             </div>
                         </Grid> */}
 
-                        {/* <Grid item lg={6} md={6} sm={6} xs={12}>
+                        <Grid item lg={6} md={6} sm={6} xs={12}>
                             <div className="dashboard-card">
                                 <p className="card-title">{t("TreasuryBalance")}</p>
                                 <p className="card-value">
@@ -174,32 +180,21 @@ function Dashboard() {
                                     )}
                                 </p>
                             </div>
-                        </Grid> */}
+                        </Grid>
 
-                        {/* <Grid item lg={6} md={6} sm={6} xs={12}>
+                        <Grid item lg={6} md={6} sm={6} xs={12}>
                             <div className="dashboard-card">
-                                <p className="card-title">{t("BackingPerSB")}</p>
-                                <p className="card-value">
-                                    {isAppLoading ? (
-                                        <Skeleton width="250px" />
-                                    ) : (
-                                        new Intl.NumberFormat("en-US", {
-                                            style: "currency",
-                                            currency: "USD",
-                                            maximumFractionDigits: 0,
-                                            minimumFractionDigits: 0,
-                                        }).format(app.rfv)
-                                    )}
-                                </p>
+                                <p className="card-title">{t("Current Buy Tax")}</p>
+                                <p className="card-value">{isAppLoading ? <Skeleton width="250px" /> : `14%`}</p>
                             </div>
-                        </Grid> */}
+                        </Grid>
 
-                        {/* <Grid item lg={6} md={6} sm={6} xs={12}>
+                        <Grid item lg={6} md={6} sm={6} xs={12}>
                             <div className="dashboard-card">
-                                <p className="card-title">{t("Runway")}</p>
-                                <p className="card-value">{isAppLoading ? <Skeleton width="250px" /> : `${trim(Number(app.runway), 1)} Days`}</p>
+                                <p className="card-title">{t("Current Sell Tax")}</p>
+                                <p className="card-value">{isAppLoading ? <Skeleton width="250px" /> : `16%`}</p>
                             </div>
-                        </Grid> */}
+                        </Grid>
                     </Grid>
                 </Zoom>
             </div>

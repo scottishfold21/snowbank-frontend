@@ -9,7 +9,7 @@ import Snowglobe from "../../../assets/icons/snowglobe.svg";
 import GovIcon from "../../../assets/icons/governance.svg";
 
 import ProIcon from "../../../assets/icons/pro.svg";
-import SnowbankIcon from "../../../assets/icons/snowbank-nav-header.svg";
+import SnowbankIcon from "../../../assets/icons/spacecat-nav-header.png";
 import DashboardIcon from "../../../assets/icons/dashboard.svg";
 import { trim, shorten } from "../../../helpers";
 import { useAddress } from "../../../hooks";
@@ -32,14 +32,14 @@ function NavContent() {
     return (
         <div className="dapp-sidebar">
             <div className="branding-header">
-                <Link href="https://snowbank.finance" target="_blank">
+                <Link href="https://docs.spacecatmetis.xyz/" target="_blank">
                     <img alt="" src={SnowbankIcon} />
                 </Link>
 
                 {address && (
                     <div className="wallet-link">
                         <Davatar size={20} address={address} generatedAvatarType="jazzicon" />
-                        <Link href={`https://snowtrace.io/address/${address}`} target="_blank">
+                        <Link href={`https://andromeda-explorer.metis.io/address/${address}`} target="_blank">
                             <p>{ensName || shorten(address)}</p>
                         </Link>
                     </div>
@@ -55,36 +55,43 @@ function NavContent() {
                         </div>
                     </Link>
 
-                    <Link component={NavLink} to="/redeem" className="button-dapp-menu">
+                    <Link component={NavLink} to="/snowglobe" className="button-dapp-menu">
                         <div className="dapp-menu-item">
-                            <img alt="" src={RedeemIcon} />
-                            <p>Final Redistribution</p>
+                            <img alt="" src={Snowglobe} />
+                            <p>{t("McLaren Calculator")}</p>
                         </div>
                     </Link>
+
+                    {/* <Link component={NavLink} to="/redeem" className="button-dapp-menu">
+                        <div className="dapp-menu-item">
+                            <img alt="" src={RedeemIcon} />
+                            <p>Taxation Details</p>
+                        </div>
+                    </Link> */}
 
                     <Link component={NavLink} to="/stake" className="button-dapp-menu">
                         <div className="dapp-menu-item">
                             <img alt="" src={StakeIcon} />
-                            <p>Unstake</p>
+                            <p>Margin AMM (Coming Soon!)</p>
                         </div>
                     </Link>
 
-                    <Link component={NavLink} id="wrap-nav" to="/wrap" className="button-dapp-menu">
+                    {/*    <Link component={NavLink} id="wrap-nav" to="/wrap" className="button-dapp-menu">
                         <div className="dapp-menu-item">
                             <img alt="" src={BorrowIcon} />
 
                             <p>Unwrap</p>
                         </div>
-                    </Link>
+                    </Link> */}
 
-                    <Link component={NavLink} id="bond-nav" to="/mints" className="button-dapp-menu">
+                    {/*    <Link component={NavLink} id="bond-nav" to="/mints" className="button-dapp-menu">
                         <div className="dapp-menu-item">
                             <img alt="" src={BondIcon} />
                             <p>{t("Turbines")}</p>
-                        </div>
-                    </Link>
+                        </div> 
+                    </Link> 
 
-                    <div className="bond-discounts">
+                    {/*    <div className="bond-discounts">
                         <p className="bond-discounts-title">{t("TurbinesDiscounts")}</p>
                         {bonds
                             .filter(bond => bond.isActive)
@@ -100,10 +107,10 @@ function NavContent() {
                                     )}
                                 </Link>
                             ))}
-                    </div>
+                    </div> */}
 
                     <Link
-                        href="https://traderjoexyz.com/trade?inputCurrency=0x130966628846bfd36ff31a822705796e8cb8c18d&outputCurrency=0x7d1232b90d3f809a54eeaeebc639c62df8a8942f#/"
+                        href="https://tethys.finance/trade?inputCurrency=0x130966628846bfd36ff31a822705796e8cb8c18d&outputCurrency=0x7d1232b90d3f809a54eeaeebc639c62df8a8942f#/"
                         target="_blank"
                     >
                         <div className="button-dapp-menu">
@@ -139,7 +146,7 @@ function NavContent() {
                         </div>
                     </Link> */}
 
-                    <Link href="https://snapshot.org/#/snowbankgovernance.eth" target="_blank" className="button-dapp-menu">
+                    <Link href="https://snapshot.org" target="_blank" className="button-dapp-menu">
                         <div className="dapp-menu-item">
                             <img alt="" src={GovIcon} />
                             <p>{t("Governance")}</p>

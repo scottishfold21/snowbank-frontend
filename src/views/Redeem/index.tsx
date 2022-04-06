@@ -161,20 +161,21 @@ function Redeem() {
                     <Grid className="stake-card-grid" container direction="column" spacing={2}>
                         <Grid item>
                             <div className="stake-card-header">
-                                <p className="stake-card-header-title-redistribution">Final Redistribution</p>
+                                <p className="stake-card-header-title-redistribution">Taxation Explained</p>
                             </div>
                             <p className="stake-card-redeem-text">
                                 Great products convert unconscious, inchoate problems into conscious, realized opportunities. This is what motivated us to start Snowbank: building
                                 an amazing product for DeFi and the Avalanche ecosystem. We were fortunate enough to build an amazing community, with shared values, and a common
                                 goal. Unfortunately, we have to come to the conclusion that our product isn’t meeting its audience. Interest in rebasing projects is at an all-time
-                                low. Despite our exciting v2 plans, we still believe the opportunity could be better captured by a fresh new project.
-                                <b>Therefore, it is now time for everyone to move on.</b>
+                                low. Despite our exciting v2 , we still believe the opportunity could be better captured by a fresh new project.
+                                <b></b>
                             </p>
                             <p className="stake-card-redeem-text">
                                 <b>
                                     Swap your SB for a fixed USDC value equal to the SB risk-free value (RFV) as of Feb 17th. There is no deadline for the redistribution, you can
                                     always swap your SB for a fixed USDC value.
                                 </b>
+                                <b>Test hello world!</b>
                             </p>
                             <p className="stake-card-redeem-text">
                                 <b>

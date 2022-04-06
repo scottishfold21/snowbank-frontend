@@ -110,7 +110,7 @@ function Stake() {
                     <Grid className="snowglobe-card-grid" container direction="column" spacing={2}>
                         <Grid item>
                             <div className="snowglobe-card-header">
-                                <p className="snowglobe-card-header-title">{t("globe:SnowglobeTitle")}</p>
+                                <p className="snowglobe-card-header-title">{t("McLaren Calculator")}</p>
                                 <p className="snowglobe-card-header-subtitle">{t("globe:EstimateYourReturns")}</p>
                                 <p className="snowglobe-card-header-disclaimer">{t("globe:SnowglobeWarning")}</p>
                             </div>
@@ -121,7 +121,7 @@ function Stake() {
                                 <Grid container spacing={2}>
                                     <Grid item xs={12} sm={4} md={4} lg={4}>
                                         <div className="snowglobe-card-apy">
-                                            <p className="snowglobe-card-metrics-title">{t("globe:CurrentSBPrice")}</p>
+                                            <p className="snowglobe-card-metrics-title">{t("Current CAT Price")}</p>
                                             <p className="snowglobe-card-metrics-value">{isAppLoading ? <Skeleton width="100px" /> : `$${trim(app.marketPrice, 2)}`}</p>
                                         </div>
                                     </Grid>
@@ -129,14 +129,14 @@ function Stake() {
                                     <Grid item xs={6} sm={4} md={4} lg={4}>
                                         <div className="snowglobe-card-tvl">
                                             <p className="snowglobe-card-metrics-title">{t("globe:CurrentRewardYield")}</p>
-                                            <p className="snowglobe-card-metrics-value">{isAppLoading ? <Skeleton width="80px" /> : <>{stakingRebasePercentage}%</>}</p>
+                                            <p className="snowglobe-card-metrics-value">{isAppLoading ? <Skeleton width="80px" /> : <>383,025.80%</>}</p>
                                         </div>
                                     </Grid>
 
                                     <Grid item xs={6} sm={4} md={4} lg={4}>
                                         <div className="snowglobe-card-index">
-                                            <p className="snowglobe-card-metrics-title">{t("globe:YourStakedSBBalance")}</p>
-                                            <p className="snowglobe-card-metrics-value">{isAppLoading ? <Skeleton width="150px" /> : <>{trimmedSsbBalance} sSB</>}</p>
+                                            <p className="snowglobe-card-metrics-title">{t("Your CAT Balance")}</p>
+                                            <p className="snowglobe-card-metrics-value">{isAppLoading ? <Skeleton width="150px" /> : <>{trimmedSsbBalance} CAT</>}</p>
                                         </div>
                                     </Grid>
                                 </Grid>
@@ -158,10 +158,10 @@ function Stake() {
                                         <Grid className="snowglobe-card-grid" container spacing={1}>
                                             <Grid item sm={5} className="snowglobe-entry">
                                                 <div className="snowglobe-card-action-row">
-                                                    <p className="snowglobe-card-action-label">{t("globe:StakedSBAmount")}</p>
+                                                    <p className="snowglobe-card-action-label">{t("Your CAT Amount")}</p>
                                                     <OutlinedInput
                                                         type="number"
-                                                        placeholder={t("globe:EnterStakedSBAmount")}
+                                                        placeholder={t("Enter CAT Amount")}
                                                         className="snowglobe-card-action-input"
                                                         value={ssbQuantity}
                                                         onChange={e => setSsbQuantity(e.target.value)}
@@ -194,7 +194,7 @@ function Stake() {
                                                     />
                                                 </div>
                                                 <div className="snowglobe-card-action-row">
-                                                    <p className="snowglobe-card-action-label">{t("globe:SBPriceAtPurchase")}</p>
+                                                    <p className="snowglobe-card-action-label">{t("CAT Price At Purchase")}</p>
                                                     <OutlinedInput
                                                         type="number"
                                                         placeholder={t("globe:EnterBuyPrice")}
@@ -212,7 +212,7 @@ function Stake() {
                                                     />
                                                 </div>
                                                 <div className="snowglobe-card-action-row">
-                                                    <p className="snowglobe-card-action-label">{t("globe:FutureSBMarketPrice")}</p>
+                                                    <p className="snowglobe-card-action-label">{t("Future CAT Market Price")}</p>
                                                     <OutlinedInput
                                                         type="number"
                                                         placeholder={t("globe:EnterFuturePrice")}
@@ -289,8 +289,8 @@ function Stake() {
                                                     <p className="data-row-value">{fCurrency(currentWealth)}</p>
                                                 </div>
                                                 <div className="data-row">
-                                                    <p className="data-row-name">{t("globe:SBRewardsEstimation")}</p>
-                                                    <p className="data-row-value">{fShortenNumber(gains)} SB</p>
+                                                    <p className="data-row-name">{t("CAT Rewards Estimation")}</p>
+                                                    <p className="data-row-value">{fShortenNumber(gains)} CAT</p>
                                                 </div>
                                                 <div className="data-row">
                                                     <p className="data-row-name">{t("globe:PotentialReturn")}</p>
@@ -298,8 +298,8 @@ function Stake() {
                                                 </div>
                                                 <div className="data-row">
                                                     <p className="data-row-name">
-                                                        {t("globe:PotentialNumberLambo")}
-                                                        <span>{t("globe:LamboHelpText")}</span>
+                                                        {t("Potential Number of McLaren's")}
+                                                        <span>{t("McLaren P1,no options")}</span>
                                                     </p>
                                                     <p className="data-row-value">{nbLambo}</p>
                                                 </div>

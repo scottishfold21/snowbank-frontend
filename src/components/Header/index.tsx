@@ -47,11 +47,11 @@ function Header({ handleDrawerToggle, drawe }: IHeader) {
     return (
         <div className={`${classes.topBar} ${!drawe && classes.topBarShift}`}>
             <AppBar position="sticky" className={classes.appBar} elevation={0}>
-                <Box className="dapp-information-box">
+                {/*    <Box className="dapp-information-box">
                     <p className="dapp-information-text">
                         Staking rewards & turbines have been paused. The final redistribution event is available at the "Final Redistribution" page.
                     </p>
-                </Box>
+                </Box> */}
                 <Toolbar disableGutters className="dapp-topbar">
                     <div onClick={handleDrawerToggle} className="dapp-topbar-slider-btn">
                         <img src={MenuIcon} alt="" />
