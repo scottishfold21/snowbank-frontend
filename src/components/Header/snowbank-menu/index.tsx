@@ -64,7 +64,7 @@ function SnowbankMenu() {
                         <div className="tooltip">
                             <Link
                                 className="tooltip-item"
-                                href={`https://www.tethys.finance/trade?inputCurrency=0x130966628846bfd36ff31a822705796e8cb8c18d&outputCurrency=${SB_ADDRESS}`}
+                                href={`https://tethys.finance/swap?outputCurrency=0x15EFa58fE3182cD01E8a01EcAcb4b653C2853705&inputCurrency=METIS`}
                                 target="_blank"
                             >
                                 <p>{t("BuyOnTraderJoe")}</p>

@@ -110,7 +110,7 @@ function NavContent() {
                     </div> */}
 
                     <Link
-                        href="https://tethys.finance/trade?inputCurrency=0x130966628846bfd36ff31a822705796e8cb8c18d&outputCurrency=0x7d1232b90d3f809a54eeaeebc639c62df8a8942f#/"
+                        href="https://tethys.finance/trade?inputCurrency=0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000&outputCurrency=0x15EFa58fE3182cD01E8a01EcAcb4b653C2853705#/"
                         target="_blank"
                     >
                         <div className="button-dapp-menu">
